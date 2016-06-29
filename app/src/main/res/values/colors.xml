@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#108070</color>
+    <color name="colorPrimaryDark">#174038</color>
+    <color name="colorAccent">#99182C</color>
+
+    <!-- new colors-->
+    <color name="primary">#108070</color>
+    <color name="primary_dark">#337147</color>
+    <color name="primary_darker">#174038</color>
+    <color name="accent">#FFFFFF</color>
+
+    <color name="black">#000000</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+    <!-- end new colors-->
+    <!-- feed colors-->
+
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+    <color name="cardBackground">#fff</color>
+
+
+    <!-- end pf feed colors-->
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.toyo.slideshowwallpaper.MainActivity"
+    android:background="#002921">
+    <LinearLayout
+        android:id="@+id/slider"
+        android:layout_width="wrap_content"
+        android:layout_height="350px">
+        <ViewFlipper
+            android:id="@+id/bckgrndViewFlipper1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:id="@+id/bckgrndImageView8"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/alhakim1" />
+            <ImageView
+                android:id="@+id/bckgrndImageView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/alhakim2" />
+            <ImageView
+                android:id="@+id/bckgrndImageView6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/alhakim3" />
+            <ImageView
+                android:id="@+id/bckgrndImageView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/alhakim4" />
+            <ImageView
+                android:id="@+id/bckgrndImageView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/alhakim5" />
+
+        </ViewFlipper>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slider"
+        android:background="#000">
+
+        <TextView
+            android:textColor="#fff"
+            android:layout_margin="10px"
+            android:id="@+id/storyText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textDirection="anyRtl"
+            />
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/Game">
+    <AbsoluteLayout android:layout_height="wrap_content" android:id="@+id/GameField" android:layout_width="match_parent">
+        <Button
+            android:id="@+id/Button00"
+            android:layout_height="200px"
+            android:layout_width="200px"
+            android:layout_x="50px"
+            android:layout_y="50px"
+            android:text=""
+            android:textSize="48px"
+            android:background="#FFF">
+
+        </Button>
+
+
+        <Button android:id="@+id/Button01" android:layout_height="200px" android:layout_width="200px" android:layout_x="255px" android:layout_y="50px" android:text="1" android:textSize="48px" android:background="@mipmap/qalwoun_p_2"></Button>
+        <Button android:id="@+id/Button02" android:layout_height="200px" android:layout_width="200px" android:layout_x="460px" android:layout_y="50px" android:text="2" android:textSize="48px" android:background="@mipmap/qalwoun_p_3"></Button>
+        <Button android:id="@+id/Button03" android:layout_height="200px" android:layout_width="200px" android:layout_x="50px" android:layout_y="255px" android:text="3" android:textSize="48px" android:background="@mipmap/qalwoun_p_4"></Button>
+        <Button android:id="@+id/Button04" android:layout_height="200px" android:layout_width="200px" android:layout_x="255px" android:layout_y="255px" android:text="4" android:textSize="48px" android:background="@mipmap/qalwoun_p_5"></Button>
+        <Button android:id="@+id/Button05" android:layout_height="200px" android:layout_width="200px" android:layout_x="460px" android:layout_y="255px" android:text="5" android:textSize="48px" android:background="@mipmap/qalwoun_p_6"></Button>
+        <Button android:id="@+id/Button06" android:layout_height="200px" android:layout_width="200px" android:layout_x="50px" android:layout_y="460px" android:text="6" android:textSize="48px" android:background="@mipmap/qalwoun_p_7"></Button>
+        <Button android:id="@+id/Button07" android:layout_height="200px" android:layout_width="200px" android:layout_x="255px" android:layout_y="460px" android:text="7" android:textSize="48px" android:background="@mipmap/qalwoun_p_8"></Button>
+        <Button android:id="@+id/Button08" android:layout_height="200px" android:layout_width="200px" android:layout_x="460px" android:layout_y="460px" android:text="8" android:textSize="48px" android:background="@mipmap/qalwoun_p_9"></Button>
+    </AbsoluteLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.Button"
+        android:id="@+id/skipButton"
+        android:text="skip"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/GameField"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

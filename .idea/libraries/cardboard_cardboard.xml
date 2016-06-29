@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="cardboard.cardboard">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/cardboard/cardboard.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
