@@ -5,23 +5,20 @@
 
     >
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/man"
-        android:id="@+id/imageView" />
-
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="200dp"
-        android:maxLines="20"
-        android:scrollbars="vertical"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_marginTop="63dp"
-        android:textColor="#FFF"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:maxLines="20"
+        android:padding="@dimen/feed_item_margin"
+        android:textColor="@color/colorAccent"
+        android:scrollbars="vertical"
+        android:background="@color/colorPrimary"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignBottom="@+id/button1" />
 
     <Button
         android:id="@+id/button1"
@@ -30,10 +27,19 @@
         android:text="Done"
         android:theme="@style/AppTheme.Button"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="50dp"
-        android:layout_marginEnd="50dp" />
+        android:layout_centerHorizontal="true"
+        />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/man2"
+
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button1"
+        android:layout_toStartOf="@+id/button1"
+        android:layout_alignTop="@+id/button1" />
 
 </RelativeLayout>
+

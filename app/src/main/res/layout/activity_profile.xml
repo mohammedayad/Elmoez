@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroumdmov">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -31,7 +32,7 @@
             <com.mikhaellopez.circularimageview.CircularImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@mipmap/applogo"
+                android:src="@drawable/user"
                 app:civ_border_width="0dp"
                 app:civ_shadow="true"
                 app:civ_shadow_radius="10"
@@ -39,11 +40,11 @@
                 />
                     <android.support.design.widget.FloatingActionButton
                         android:id="@+id/fab"
-                        app:backgroundTint="@color/iron"
+                        app:backgroundTint="@color/colorAccent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="95dp"
-                        android:layout_marginTop="95dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="110dp"
                         android:src="@drawable/ic_menu_photo_camera"
                         />
         </RelativeLayout>
@@ -58,7 +59,7 @@
                 android:layout_marginTop="80dp"
                 android:layout_marginLeft="10dp"
                 android:text="Shereen Ibrahim"
-                android:textColor="#fff"
+                android:textColor="@color/colorAccent"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 />
@@ -93,9 +94,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
+                android:textStyle="bold"
                 android:layout_marginBottom="3dp"
                 android:layout_marginTop="3dp"
-                android:background="#fff"
+                android:background="@drawable/my_border"
+                android:textColor="@color/colorPrimary"
                 android:clickable="true"
                 android:elevation="4dp"
                 android:padding="20dp"
@@ -109,13 +112,14 @@
                 android:layout_margin="5dp"
                 android:layout_marginBottom="3dp"
                 android:layout_marginTop="3dp"
-                android:background="#fff"
-
+                android:background="@drawable/my_border"
+                android:textColor="@color/colorPrimary"
                 android:elevation="4dp"
                 android:padding="20dp"
                 android:text="Sign Out"
                 android:gravity="left"
                 android:id="@+id/userSignOut"
+                android:textStyle="bold"
                 />
 
 

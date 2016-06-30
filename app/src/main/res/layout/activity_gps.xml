@@ -12,33 +12,42 @@
 
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@mipmap/man"
-        android:id="@+id/imageView1"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/man2"
+        android:id="@+id/imageView"
+        android:layout_marginBottom="297dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/startGPS"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-    <TextView
-        android:id="@+id/view_gps"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:maxLines="20"
-        android:scrollbars="vertical"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_marginTop="63dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="#FFF"/>
+    <!--<TextView-->
+    <!--android:id="@+id/textView1"-->
+    <!--android:layout_width="200dp"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:maxLines="20"-->
+    <!--android:scrollbars="vertical"-->
+    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+    <!--android:layout_marginTop="63dp"-->
+    <!--android:textColor="#FFF"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_centerHorizontal="true" />-->
 
     <Button
         android:id="@+id/startGPS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="start the Camera"
+        android:text="start the GPS"
         android:theme="@style/AppTheme.Button"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/imageView1"
-        android:layout_alignEnd="@+id/imageView1" />
+        android:layout_marginRight="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="54dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/colorAccent"/>
+
 
 
 

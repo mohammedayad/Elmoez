@@ -40,8 +40,6 @@ public class CameraFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         startCameraActivity=(Button)cameraView.findViewById(R.id.startCamera);
         startVideoActivity=(Button)cameraView.findViewById(R.id.startVideo);
-        TextView info = (TextView) cameraView.findViewById(R.id.textView1);
-        info.setText("We will show you our history.Click the button and focus the camera, you will see everything ^_^");
 
         //when click on startCameraActivity button will open gps activity
         startCameraActivity.setOnClickListener(new View.OnClickListener() {

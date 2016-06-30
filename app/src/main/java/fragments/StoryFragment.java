@@ -1,10 +1,13 @@
 package fragments;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Point;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -128,19 +131,40 @@ public class StoryFragment  extends Fragment {
 
     private Bitmap getThumb(String s)
     {
-        Bitmap bmp = Bitmap.createBitmap(150, 150, Bitmap.Config.RGB_565);
-        Canvas canvas = new Canvas(bmp);
+//        Bitmap bmp = Bitmap.createBitmap(150, 150, Bitmap.Config.RGB_565);
+        Resources res = getResources();
+        Bitmap bitmap=null;
+        if (s.equals("Al-Hakim")){
+            bitmap = BitmapFactory.decodeResource(res, R.drawable.alhakim1);
+
+
+        }else if(s.equals("Barquq")){
+            bitmap = BitmapFactory.decodeResource(res, R.drawable.barqoq5);
+
+
+        }else{
+            bitmap = BitmapFactory.decodeResource(res, R.drawable.qalwoun5);
+
+        }
+//        Then make the bitmap mutable and create a canvas over it:
+
+        Canvas canvas = new Canvas(bitmap.copy(Bitmap.Config.ARGB_8888, true));
+//        Canvas canvas = new Canvas(bmp);
         Paint paint = new Paint();
 
         paint.setColor(Color.rgb(random.nextInt(128), random.nextInt(128), random.nextInt(128)));
         paint.setTextSize(18);
         paint.setFlags(Paint.ANTI_ALIAS_FLAG);
-        canvas.drawRect(new Rect(0, 0, 200, 200), paint);
-        paint.setColor(Color.WHITE);
+//        canvas.drawRect(new Rect(0, 0, 200, 200), paint);
+
+
+
+
+        paint.setColor(Color.BLACK);
         paint.setTextAlign(Paint.Align.CENTER);
         canvas.drawText(s, 75, 75, paint);
 
-        return bmp;
+        return bitmap;
     }
 
     public void createViews(){

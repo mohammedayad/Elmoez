@@ -54,25 +54,25 @@ public class MainActivity extends AppCompatActivity {
         tabs.setupWithViewPager(viewPager);
         setupTabIcons();
 //        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabs));
-        tabs.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                tab.getIcon().setColorFilter(Color.parseColor("#99182C"), PorterDuff.Mode.SRC_IN);
-                viewPager.setCurrentItem(tab.getPosition());
-                Log.e("tabPosition",""+tab.getPosition());
-
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-                tab.getIcon().setColorFilter(Color.parseColor("#D3D3D3"), PorterDuff.Mode.SRC_IN);
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
+//        tabs.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+//            @Override
+//            public void onTabSelected(TabLayout.Tab tab) {
+//                tab.getIcon().setColorFilter(Color.parseColor("#99182C"), PorterDuff.Mode.SRC_IN);
+//                viewPager.setCurrentItem(tab.getPosition());
+//                Log.e("tabPosition",""+tab.getPosition());
+//
+//            }
+//
+//            @Override
+//            public void onTabUnselected(TabLayout.Tab tab) {
+//                tab.getIcon().setColorFilter(Color.parseColor("#D3D3D3"), PorterDuff.Mode.SRC_IN);
+//            }
+//
+//            @Override
+//            public void onTabReselected(TabLayout.Tab tab) {
+//
+//            }
+//        });
 
     }
 

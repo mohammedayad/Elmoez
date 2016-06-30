@@ -7,7 +7,9 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="16dp"
     android:elevation="200dp"
-    card_view:cardBackgroundColor="@color/cardBackground">
+    card_view:cardBackgroundColor="@color/colorAccent"
+
+    >
 
 
     <LinearLayout
@@ -30,13 +32,13 @@
                 android:id="@+id/writeFeed"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#99182C"
                 android:textSize="16sp"
                 android:layout_margin="10dp"
-                android:hint=" your Feed"
-                android:textColorHint="#a9a9a9"
-                android:background="@drawable/group_bottom"
+                android:hint="Write your Comment"
+                android:textColorHint="@color/colorPrimary"
+                android:background="@drawable/my_border"
                 android:padding="15dp"
+
                 />
 
         </LinearLayout>
@@ -54,15 +56,17 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="16dp"
-            android:weightSum="2">
+            android:weightSum="2"
+            >
 
             <!-- camera-->
             <ImageButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="@drawable/ic_menu_photo_camera"
             android:id="@+id/imagePost"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+                android:layout_marginLeft="50dp"/>
 
             <TextView
                 android:id="@+id/camera"
@@ -71,14 +75,15 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="3dp"
                 android:text="photo"
-                android:textColor="#607D8B"
+                android:textColor="@color/colorPrimary"
                 android:textSize="15dp"
                 android:layout_gravity="center"
+                android:textStyle="bold"
 
                 />
             <ImageButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="@drawable/ic_menu_send"
                 android:id="@+id/post"
                android:layout_gravity="end"
@@ -91,7 +96,8 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="end"
                 android:layout_marginLeft="3dp"
-                android:textColor="#607D8B"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
                 android:textSize="15dp"
                 android:text="Post"
 
@@ -107,7 +113,8 @@
             android:id="@+id/list"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
-            android:divider="@null" />
+            android:divider="@null"
+            android:background="@drawable/backgroumdmov"/>
         </LinearLayout>
 
     </LinearLayout>

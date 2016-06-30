@@ -22,7 +22,6 @@ import model.gps.activity.GPSActivity;
 public class GPSFragment extends Fragment {
     View gpsView;
     Button startGPSActivity;
-    TextView GPS_info;
 
     @Nullable
     @Override
@@ -39,8 +38,6 @@ public class GPSFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         startGPSActivity=(Button)gpsView.findViewById(R.id.startGPS);
-        GPS_info = (TextView) gpsView.findViewById(R.id.view_gps);
-        GPS_info.setText("We will help you to find each place you search about");
         //when click on startGPSActivity button will open gps activity
         startGPSActivity.setOnClickListener(new View.OnClickListener() {
             @Override
