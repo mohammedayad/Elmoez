@@ -1,20 +1,72 @@
 package model.puzzlegame;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 import eu.kudan.kudansamples.R;
+import eu.kudan.kudansamples.AppSetting;
 
 
 public class WinGame extends AppCompatActivity {
 
     Animation fade_in, fade_out;
     ViewFlipper viewFlipper;
-String activityName="";
+    String activityName="";
+    SharedPreferences settingPreference;
+    TextView storyText;
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+
+            Intent i=new Intent(this,AppSetting.class);
+            startActivity(i);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+
+
+    @Override
+    public void onResume (){
+        super.onResume();
+
+        settingPreference=getSharedPreferences("dataOfApp",MODE_PRIVATE);
+
+
+        storyText.setTextSize(settingPreference.getFloat("fontSize", 0) + 20);
+
+
+
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +78,7 @@ String activityName="";
         if(activityName.equals("Al-Hakim")){
 
             setContentView(R.layout.alhakim_info);
-            TextView storyText=(TextView)findViewById(R.id.storyText);
+           storyText=(TextView)findViewById(R.id.storyText);
             storyText.setText("\n" +
                     "990-1013 AD\\ 380-403 AH\n"+
                     "Fatimid\n" +

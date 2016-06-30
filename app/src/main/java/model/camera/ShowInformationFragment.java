@@ -2,6 +2,8 @@ package model.camera;
 
 import android.annotation.SuppressLint;
 import android.app.DialogFragment;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
@@ -11,6 +13,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import eu.kudan.kudansamples.R;
 
@@ -21,6 +24,7 @@ public class ShowInformationFragment extends DialogFragment {
 	Button Done;
 	View layout;
 	String text;
+	SharedPreferences settingPreference;
 
 		String data="";
 
@@ -43,6 +47,13 @@ public class ShowInformationFragment extends DialogFragment {
 
 		info.setText(data);
 
+
+		settingPreference=this.getActivity().getSharedPreferences("dataOfApp", Context.MODE_PRIVATE);
+
+
+		info.setTextSize(settingPreference.getFloat("fontSize", 0) + 20);
+
+
 		info.setMovementMethod(new ScrollingMovementMethod());
 
 		Done.setOnClickListener(new OnClickListener() {
@@ -58,4 +69,25 @@ public class ShowInformationFragment extends DialogFragment {
 		setCancelable(false);
 		return layout;
 	}
+//
+//	@Override
+//	public void onResume (){
+//		super.onResume();
+//
+//		settingPreference=this.getActivity().getSharedPreferences("dataOfApp", Context.MODE_PRIVATE);
+//
+//
+//        info.setTextSize(settingPreference.getFloat("fontSize",0)+20);
+//		Toast.makeText(getContext(), "resuuuuuuuuuuuuume", Toast.LENGTH_LONG).show();
+//        Toast.makeText(getContext(),"resumeeeeeee",Toast.LENGTH_SHORT).show();
+//
+//
+//
+//
+//	}
+
+
+
+
+
 }
