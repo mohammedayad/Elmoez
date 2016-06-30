@@ -47,6 +47,13 @@ public class ShowInformationFragment extends DialogFragment {
 
 		info.setText(data);
 
+
+		settingPreference=this.getActivity().getSharedPreferences("dataOfApp", Context.MODE_PRIVATE);
+
+
+		info.setTextSize(settingPreference.getFloat("fontSize", 0) + 20);
+
+
 		info.setMovementMethod(new ScrollingMovementMethod());
 
 		Done.setOnClickListener(new OnClickListener() {
@@ -62,22 +69,22 @@ public class ShowInformationFragment extends DialogFragment {
 		setCancelable(false);
 		return layout;
 	}
-
-	@Override
-	public void onResume (){
-		super.onResume();
-
-		settingPreference=this.getActivity().getSharedPreferences("dataOfApp", Context.MODE_PRIVATE);
-
-
-        info.setTextSize(settingPreference.getFloat("fontSize",0)+20);
-		Toast.makeText(getContext(), "resuuuuuuuuuuuuume", Toast.LENGTH_LONG).show();
-        Toast.makeText(getContext(),"resumeeeeeee",Toast.LENGTH_SHORT).show();
-
-
-
-
-	}
+//
+//	@Override
+//	public void onResume (){
+//		super.onResume();
+//
+//		settingPreference=this.getActivity().getSharedPreferences("dataOfApp", Context.MODE_PRIVATE);
+//
+//
+//        info.setTextSize(settingPreference.getFloat("fontSize",0)+20);
+//		Toast.makeText(getContext(), "resuuuuuuuuuuuuume", Toast.LENGTH_LONG).show();
+//        Toast.makeText(getContext(),"resumeeeeeee",Toast.LENGTH_SHORT).show();
+//
+//
+//
+//
+//	}
 
 
 
