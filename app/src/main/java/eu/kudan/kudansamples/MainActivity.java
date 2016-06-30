@@ -1,6 +1,7 @@
 package eu.kudan.kudansamples;
 
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
@@ -93,6 +94,9 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
+            Intent i=new Intent(this,AppSetting.class);
+            startActivity(i);
             return true;
         }
 

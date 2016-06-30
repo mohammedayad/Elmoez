@@ -89,6 +89,7 @@
     <string name="user_password">Password</string>
     <string name="login_button">Login</string>
     <string name="create_new_account">No account yet? Create one</string>
+    <string name="title_activity_app_setting">AppSetting</string>
 
     <!--end of Log In Strings-->
 
