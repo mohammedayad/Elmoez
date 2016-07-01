@@ -184,7 +184,7 @@ public class Login extends AppCompatActivity {
                                 // Creating user login session
                                 // For testing i am stroing name, email as follow
                                 // Use user real data
-                                session.createLoginSession(response.getString("userName"),email,response.getString("userImage"));
+                                session.createLoginSession(response.getString("userName"),email,"default.jpg");
                                 onLoginSuccess(response.getString("state"));
 
 

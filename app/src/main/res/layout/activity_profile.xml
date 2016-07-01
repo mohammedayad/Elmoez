@@ -45,7 +45,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="100dp"
                         android:layout_marginTop="110dp"
-                        android:src="@drawable/ic_menu_photo_camera"
                         />
         </RelativeLayout>
                     <RelativeLayout
@@ -72,8 +71,6 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_menu_edit"
-                android:background="@null"
                 android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/linearLayout"
                 android:layout_toEndOf="@+id/linearLayout"
