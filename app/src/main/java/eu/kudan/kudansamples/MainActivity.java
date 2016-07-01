@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     // arrays of icons of tablayout
     private int[] tabIcons = {
             R.drawable.ic_menu_home,
-            R.drawable.ic_menu_photo_camera,
+            R.drawable.ic_menu_camera,
             R.drawable.ic_menu_location,
             R.drawable.ic_menu_story,
             R.drawable.ic_menu_headlines

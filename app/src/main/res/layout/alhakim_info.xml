@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.app.toyo.slideshowwallpaper.MainActivity"
-    android:background="#002921">
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
     <LinearLayout
         android:id="@+id/slider"
         android:layout_width="wrap_content"
@@ -55,7 +55,7 @@
         android:background="#000">
 
         <TextView
-            android:textColor="#fff"
+            android:textColor="@color/colorAccent"
             android:layout_margin="10px"
             android:id="@+id/storyText"
             android:layout_width="match_parent"
