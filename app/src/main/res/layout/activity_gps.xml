@@ -33,20 +33,19 @@
     <!--android:textColor="#FFF"-->
     <!--android:layout_alignParentTop="true"-->
     <!--android:layout_centerHorizontal="true" />-->
-
     <Button
         android:id="@+id/startGPS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="start the GPS"
         android:theme="@style/AppTheme.Button"
-        android:layout_marginRight="56dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="54dp"
-        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginRight="57dp"
+        android:layout_marginEnd="57dp"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:textColor="@color/colorAccent"/>
+        android:layout_marginTop="40dp" />
 
 
 

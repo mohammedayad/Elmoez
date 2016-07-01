@@ -111,7 +111,7 @@ public class HomeFragment  extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        Log.e("========","home");
+        Log.e("========", "home");
         userSession=new SessionManager(getContext());
         user=userSession.getUserDetails();
         // Get the ImageLoader through your singleton class.
@@ -500,7 +500,7 @@ public class HomeFragment  extends Fragment {
 
     //	upload feed component
     public void uploadFeedComponent() {
-        String path=PathValue.getPath(getActivity(), filePath);
+        String path= PathValue.getPath(getActivity(), filePath);
         if(path!=null) {
 
 
@@ -578,7 +578,7 @@ public class HomeFragment  extends Fragment {
                         try {
                             Log.e("statttttttte",response.getString("state"));
                             loading.dismiss();
-                            Toast.makeText(getActivity(),response.getString("state"),Toast.LENGTH_LONG).show();
+                            Toast.makeText(getActivity(), response.getString("state"), Toast.LENGTH_LONG).show();
 
                         } catch (JSONException e) {
                             e.printStackTrace();
